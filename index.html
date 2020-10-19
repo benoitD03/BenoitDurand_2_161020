@@ -5,18 +5,16 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.1/css/all.min.css" />
     <link rel="stylesheet" href="style.css">
-    <title>Reservia</title>
-</head>
-<body>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@300;621&display=swap" rel="stylesheet"><body>
 <!-- Header -->
     <header>
         <div id="titre_principal"> 
             <img src="images/logo/Reservia.svg" alt="Logo Reservia">
             <nav>
                 <ul>
-                    <li><a href="#">Hébergements</a></li>
-                    <li><a href="#">Activités</a></li>
-                    <li><a href="#">S'inscrire</a></li>
+                    <li><a href="#hebergements">Hébergements</a></li>
+                    <li><a href="#activite">Activités</a></li>
+                    <li><a href="#"><strong>S'inscrire</strong></a></li>
                 </ul>
             </nav>
         </div>
@@ -30,9 +28,9 @@
             <div id="recherche">
                 <form method="post" action="#">
                     <p>
-                        <label for="localisation"><i class="fas fa-map-marker-alt"></i></label>
+                        <label for="localisation" class="gps"><i class="fas fa-map-marker-alt"></i></label>
                         <input type="search" name="localisation" id="localisation" placeholder="Marseille, France" />
-                        <input type="button" value="Rechercher" />
+                        <input type="button" class="btn" value="Rechercher" />
                     </p>
                 </form>
             </div>
@@ -143,7 +141,7 @@
 <!-- Section 3-->
     <section>
         <div class="container">
-            <h2>Activités à Marseille</h2>
+            <h2 id="activite">Activités à Marseille</h2>
             <div id="gauche">
                 <p>
                     <a href="#">
