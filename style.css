@@ -147,8 +147,9 @@ form {
 
 /* SECTION 2 */
 
+
 .containerHeb {
-    margin-left: 30px;
+    margin-bottom: 70px;
     display: flex;
     justify-content: space-around;
 }
@@ -182,14 +183,29 @@ form {
 #populaires{
     width: 30%;
     background-color: #F2F2F2;
+    border-radius: 15px;
+}
+#colonnePop {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 .vignettesPop {
-    width: 300px;
-    border: 2px solid black;
+    width: 400px;
+    height: 150px;
+    border: 6px solid white;
+    border-radius: 15px;
+    background-color: white;
+    margin-bottom: 40px;
 }
 .vignettesPop img {
-    width: 110px;
-    height: 100px;
+    width: 150px;
+    height: 150px;
+    border-radius: 15px 0 0 15px;
+}
+.vignettesPop a {
+    display: flex;
 }
 .containerHeb a:visited {
     color: black;
@@ -202,20 +218,179 @@ form {
     font-size: 1em;
     margin: 7px 0 0 7px;
 }
-.vignettesHeb a i {
-    color: #0065FC;
-    font-size: medium;
-}
 #hebergements h2 {
     margin-left: 30px;
     font-size: 1.6em;
 }
 .etoile {
     margin: 7px;
+    color: #0065FC;
+    font-size: medium;
 }
+#hebergements span a{
+    margin-left: 25px;
+    font-weight: bold;
+}
+#titrePop {
+    display: flex;
+    justify-content: space-between;
+}
+#titrePop h2{
+    margin: 40px;
+    font-size: 1.6em;
+}
+#titrePop i{
+    margin: 40px;
+    font-size: 1.3em;
+}
+.textePop {
+    margin-left: 25px;
+    margin-right: 25px;
+}
+.textePop .etoile {
+    margin: 0;
+}
+.textePop h3 {
+    margin-bottom: 0;
+}
+.textePop p {
+    margin-top: 7px;
+    margin-bottom: 30px;
+}
+
 
 /* SECTION 3 */
 
+
+#titreAct {
+    margin-left: 35px;
+}
+.containerAct {
+    display: flex;
+    margin-bottom: 70px;
+}
+#gauche {
+    display: flex;
+    width: 45%;
+    margin-right: 90px;
+}
+#droite {
+    display: flex;
+    width: 45%;
+}
+.containerAct h3 {
+    margin-left: 20px;
+    color: black;
+}
+#imageSimpleGauche {
+    width: 370px;
+    height: 570px;
+    margin-left: 30px;
+    margin-right: 80px;
+    border:  1px solid #F2F2F2;
+    border-radius: 21px;
+    box-shadow: 6px 6px 6px #F2F2F2;
+}
+#imageSimpleGauche img {
+    width: 370px;
+    height: 500px;
+    border-radius: 20px 20px 0 0;
+}
+#hautGauche {
+    width: 370px;
+    height: 300px;
+    border:  1px solid #F2F2F2;
+    border-radius: 21px;
+    box-shadow: 6px 6px 6px #F2F2F2;
+    margin-bottom: 50px;
+}
+#hautGauche img {
+    width: 370px;
+    height: 230px;
+    border-radius: 20px 20px 0 0;
+}
+
+#basGauche {
+    width: 370px;
+    height: 220px;
+    border:  1px solid #F2F2F2;
+    border-radius: 21px;
+    box-shadow: 6px 6px 6px #F2F2F2;
+}
+#basGauche img {
+    width: 370px;
+    height: 150px;
+    border-radius: 20px 20px 0 0;
+}
+
+#imageSimpleDroite {
+    width: 370px;
+    height: 570px;
+    margin-left: 30px;
+    margin-right: 80px;
+    border:  1px solid #F2F2F2;
+    border-radius: 21px;
+    box-shadow: 6px 6px 6px #F2F2F2;
+}
+#imageSimpleDroite img {
+    width: 370px;
+    height: 500px;
+    border-radius: 20px 20px 0 0;
+}
+#hautDroite {
+    width: 370px;
+    height: 260px;
+    border:  1px solid #F2F2F2;
+    border-radius: 21px;
+    box-shadow: 6px 6px 6px #F2F2F2;
+    margin-bottom: 50px;
+}
+#hautDroite img {
+    width: 370px;
+    height: 190px;
+    border-radius: 20px 20px 0 0;
+}
+
+#basDroite {
+    width: 370px;
+    height: 260px;
+    border:  1px solid #F2F2F2;
+    border-radius: 21px;
+    box-shadow: 6px 6px 6px #F2F2F2;
+}
+#basDroite img {
+    width: 370px;
+    height: 190px;
+    border-radius: 20px 20px 0 0;
+}
+
 /* FOOTER */
 
+
+footer {
+    background-color: #F2F2F2;
+    width: 100%;
+    display: flex;
+    margin: 0;
+    padding: 30px 0 30px 0;
+}
+footer a {
+    color: black;
+    margin-bottom: 7px;
+}
+#aPropos {
+    display: flex;
+    flex-direction: column;
+    margin-left: 30px;
+    margin-right: 400px;
+}
+#nosHebergements {
+    display: flex;
+    flex-direction: column;
+    margin-right: 400px;
+}
+#assistance {
+    display: flex;
+    flex-direction: column;
+}
 
