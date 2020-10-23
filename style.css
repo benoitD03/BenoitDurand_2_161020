@@ -47,11 +47,17 @@ nav ul li a:visited {
     color: gray;
 }
 nav ul li a:hover {
-    color: gray;
+    border-top: 3px #0065FC solid;
+   padding-top: 35px;
+   color: #0065FC;
 }
-nav ul li a:active{
+nav ul li a:focus{
    border-top: 3px #0065FC solid;
    padding-top: 35px;
+   color: #0065FC;
+}
+#inscription a:visited {
+    color: #0065FC;
 }
 
 
@@ -70,6 +76,11 @@ form {
     border-right: transparent;
     border-left: transparent;
     outline: transparent;
+    font-size: 1.2em;
+}
+#localisation::placeholder {
+    color: black;
+    padding: 15px;
     font-size: 1.2em;
 }
 .btn {
@@ -91,6 +102,7 @@ form {
 }
 #filtres {
     display: flex;
+    flex-wrap: wrap;
 }
 #filtres h3 {
     margin-right: 30px;
@@ -101,7 +113,7 @@ form {
     margin-right: 40px;
     margin-top: auto;
     margin-bottom: auto;
-    border: 3px solid #F2F2F2;
+    border: 2px solid #F2F2F2;
     border-radius: 35px;
 }
 .mesFiltres i{
@@ -112,6 +124,10 @@ form {
    border-radius: 35px;
    color: #0065FC;
    background-color: #DEEBFF;
+}
+.mesFiltres .fa-child {
+    padding-left: 20px;
+    padding-right: 20px;
 }
 .mesFiltres p {
     font-weight: bold;
@@ -153,13 +169,13 @@ form {
     display: flex;
     justify-content: space-around;
 }
-#premiereLigne {
-    display: flex;
-    justify-content: space-around;
+.containerHeb a , .containerHeb a:visited {
+    color: black;
 }
-#secondeLigne {
-    display: flex;
-    justify-content: space-around;
+.etoile {
+    margin: 7px;
+    color: #0065FC;
+    font-size: medium;
 }
 #hebergements {
     width: 60%;
@@ -167,6 +183,24 @@ form {
     border-radius: 15px;
     padding: 20px;
     background-color: #F2F2F2;
+}
+#hebergements h2 {
+    margin-left: 30px;
+    font-size: 1.6em;
+}
+#hebergements span a{
+    margin-left: 25px;
+    font-weight: bold;
+}
+#premiereLigne {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+#secondeLigne {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
 }
 .vignettesHeb {
     width: 300px;
@@ -179,6 +213,15 @@ form {
     width : 300px;
     height: 150px;
     border-radius: 15px 15px 0 0;
+    object-fit: cover;
+}
+.vignettesHeb a h3 {
+    font-size: 1.2em;
+    margin: 7px 0 0 7px;
+}
+.vignettesHeb a p {
+    font-size: 1em;
+    margin: 7px 0 0 7px;
 }
 #populaires{
     width: 30%;
@@ -203,33 +246,10 @@ form {
     width: 150px;
     height: 150px;
     border-radius: 15px 0 0 15px;
+    object-fit: cover;
 }
 .vignettesPop a {
     display: flex;
-}
-.containerHeb a:visited {
-    color: black;
-}
-.vignettesHeb a h3 {
-    font-size: 1.2em;
-    margin: 7px 0 0 7px;
-}
-.vignettesHeb a p {
-    font-size: 1em;
-    margin: 7px 0 0 7px;
-}
-#hebergements h2 {
-    margin-left: 30px;
-    font-size: 1.6em;
-}
-.etoile {
-    margin: 7px;
-    color: #0065FC;
-    font-size: medium;
-}
-#hebergements span a{
-    margin-left: 25px;
-    font-weight: bold;
 }
 #titrePop {
     display: flex;
@@ -268,6 +288,7 @@ form {
 .containerAct {
     display: flex;
     margin-bottom: 70px;
+    flex-wrap: wrap;
 }
 #gauche {
     display: flex;
@@ -295,6 +316,7 @@ form {
     width: 370px;
     height: 500px;
     border-radius: 20px 20px 0 0;
+    object-fit: cover;
 }
 #hautGauche {
     width: 370px;
@@ -308,8 +330,8 @@ form {
     width: 370px;
     height: 230px;
     border-radius: 20px 20px 0 0;
+    object-fit: cover;
 }
-
 #basGauche {
     width: 370px;
     height: 220px;
@@ -321,8 +343,8 @@ form {
     width: 370px;
     height: 150px;
     border-radius: 20px 20px 0 0;
+    object-fit: cover;
 }
-
 #imageSimpleDroite {
     width: 370px;
     height: 570px;
@@ -336,6 +358,7 @@ form {
     width: 370px;
     height: 500px;
     border-radius: 20px 20px 0 0;
+    object-fit: cover;
 }
 #hautDroite {
     width: 370px;
@@ -349,8 +372,8 @@ form {
     width: 370px;
     height: 190px;
     border-radius: 20px 20px 0 0;
+    object-fit: cover;
 }
-
 #basDroite {
     width: 370px;
     height: 260px;
@@ -362,7 +385,9 @@ form {
     width: 370px;
     height: 190px;
     border-radius: 20px 20px 0 0;
+    object-fit: cover;
 }
+
 
 /* FOOTER */
 
@@ -394,3 +419,74 @@ footer a {
     flex-direction: column;
 }
 
+
+
+
+/* MEDIA QUERIES */
+
+
+
+@media screen and (max-width : 768px)
+{
+    #titre_principal:not(#inscription){
+        flex-direction: column;  
+    }
+   .containerHeb {
+       width: auto;
+       flex-direction: column-reverse;
+   }
+   #populaires {
+       width: auto;
+   }
+   #hebergements {
+       width: auto;
+       background-color: white;
+   }
+   .vignettesHeb {
+       width: 90%;
+       box-shadow: 6px 6px 6px 6px #F2F2F2;
+   }
+   .vignettesHeb img {
+       width: 100%;
+   }
+   footer {
+       flex-direction: column;
+   }
+   #nosHebergements {
+       margin-left: 30px;
+   }
+   #assistance {
+       margin-left: 30px;
+   }
+   .containerAct{
+       flex-direction: column;
+       width: auto;
+   }
+   #gauche {
+       flex-direction: column;
+       width: auto;
+   }
+   #droite {
+       flex-direction: column;
+       width: auto;
+   }
+   #imageSimpleGauche {
+       width: 90%;
+   }
+   #hautGauche{
+       width: 90%;
+   }
+   #basGauche{
+       width: 90%;
+   }
+   #imageSimpleDroite{
+       width: 90%;
+   }
+   #hautDroite{
+       width: 90%;
+   }
+   #basDroite{
+       width: 90%;
+   }
+
+}
