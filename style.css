@@ -29,6 +29,9 @@ a {
     margin-top : 20px;
     width: 120px;
 }
+#menu {
+    display: flex;
+}
 .container p {
     margin-top: 5px; 
     font-size: 1.3em;
@@ -292,12 +295,12 @@ form {
 }
 #gauche {
     display: flex;
-    width: 45%;
+    width: 47%;
     margin-right: 90px;
 }
 #droite {
     display: flex;
-    width: 45%;
+    width: 47%;
 }
 .containerAct h3 {
     margin-left: 20px;
@@ -426,67 +429,145 @@ footer a {
 
 
 
-@media screen and (max-width : 768px)
+@media all and (max-width : 768px)
 {
-    #titre_principal:not(#inscription){
-        flex-direction: column;  
+    /* GENERAL */
+
+
+    body { 
+        width: auto;
     }
-   .containerHeb {
-       width: auto;
+
+    /* HEADER */
+
+   ul {
        flex-direction: column-reverse;
    }
-   #populaires {
-       width: auto;
+   #inscription {
+       text-align: right;
    }
-   #hebergements {
-       width: auto;
-       background-color: white;
+   nav ul li a:hover {
+        border-bottom: 3px #0065FC solid;
+        border-top: none;
+        padding-bottom: 10px;
+        color: #0065FC;
    }
-   .vignettesHeb {
-       width: 90%;
-       box-shadow: 6px 6px 6px 6px #F2F2F2;
+   nav ul li a:focus{
+        border-bottom: 3px #0065FC solid;
+        border-top: none;
+        padding-bottom: 10px;
+        color: #0065FC;
    }
-   .vignettesHeb img {
-       width: 100%;
-   }
-   footer {
-       flex-direction: column;
-   }
-   #nosHebergements {
-       margin-left: 30px;
-   }
-   #assistance {
-       margin-left: 30px;
-   }
-   .containerAct{
-       flex-direction: column;
-       width: auto;
-   }
-   #gauche {
-       flex-direction: column;
-       width: auto;
-   }
-   #droite {
-       flex-direction: column;
-       width: auto;
-   }
-   #imageSimpleGauche {
-       width: 90%;
-   }
-   #hautGauche{
-       width: 90%;
-   }
-   #basGauche{
-       width: 90%;
-   }
-   #imageSimpleDroite{
-       width: 90%;
-   }
-   #hautDroite{
-       width: 90%;
-   }
-   #basDroite{
-       width: 90%;
-   }
+
+    /* SECTION 1 */
+
+
+    #filtres h3 {
+        width: 100%;
+    }
+    .mesFiltres {
+        margin-right: 15px;
+        margin-bottom: 20px;
+    }
+    #localisation {
+        width: auto;
+    }
+    #localisation::placeholder {
+        font-size: 1em;
+    }
+
+    /* SECTION 2 */
+
+
+    .containerHeb {
+        width: auto;
+        margin: auto;
+        flex-direction: column-reverse;
+    }
+    #populaires {
+        width: auto;
+        margin: 0;   
+    }
+    #hebergements {
+        width: auto;
+        margin: auto;
+        background-color: white;
+    }
+    .vignettesHeb {
+        width: 100%;
+        box-shadow: 6px 6px 6px 6px #F2F2F2;
+        margin: auto auto 30px auto;
+    }
+    .vignettesHeb img {
+        width: 100%;
+    }
+    .vignettesPop {
+        width: 90%;
+    }
+
+    /* SECTION 3 */ 
+
+
+    .containerAct{
+        flex-direction: column;
+        margin-bottom: 30px;
+    }
+    #gauche {
+        flex-direction: column;
+        align-content: center;
+        width:auto;
+        margin-right: 0;
+        margin-left: 0;
+    }
+    
+    #droite {
+        flex-direction: column;
+        align-content: center;
+        width: auto;
+    }
+    .vignettesAct {
+        width: 90% !important;
+        height: 250px !important;
+        margin: auto auto 30px auto;
+        
+    }
+    .vignettesAct img {
+        width: 100% !important;
+        height: 70% !important;
+    }
+
+    /* FOOTER */
+
+
+    footer {
+        flex-direction: column;
+    }
+    #aPropos {
+        width: 60%;
+    }
+    #nosHebergements {
+        margin-left: 30px;
+        width: 60%;
+    }
+    #assistance {
+        margin-left: 30px;
+    }
+ 
+
+
+
+    
+
+
+    
+
+
+   
+
+
+
+ 
+   
+ 
 
 }
