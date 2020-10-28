@@ -430,7 +430,7 @@ footer a {
 
 
 
-@media all and (max-width : 768px)
+@media all and (max-width : 480px)
 {
     /* GENERAL */
 
@@ -639,22 +639,106 @@ footer a {
     #assistance {
         margin-left: 30px;
     }
- 
+}
+
+/* VERSION TABLETTE */
 
 
+@media all and (min-width: 481px) and (max-width: 1024px)
+{
+    html { 
+        width: auto ;
+    }
+    /* HEADER */
 
+
+    #titre_principal {
+        margin-bottom: 30px;
+    }
+    /* SECTION 1 */
+    
+    form {
+        margin-top: 30px;
+    }
+    .mesFiltres {
+        margin-bottom: 20px;
+    }
+    /* SECTION 2 */ 
+
+
+    .containerHeb {
+        width: auto;
+        margin: auto;
+        flex-direction: column-reverse;
+    }
+    #hebergements {
+        width: auto;
+    }
+    #populaires {
+        width: auto;
+        margin-bottom: 30px;
+    }
+    #colonnePop {
+        width: auto;
+        display: flex;
+    }
+    .vignettesPop {
+        width: auto;
+    }
+
+
+    /*  SECTION 3 */
+
+    .containerAct{
+        width: auto;
+        flex-direction: column;
+    }
+    #gauche {
+        margin-bottom: 30px;
+    }
+    #imageSimpleGauche {
+        margin-right: 20px;
+        width: 350px;
+    }
+    #imageSimpleDroite {
+        margin-right: 20px;
+    }
+    .vignettesAct {
+        width: 350px !important;
+    }
+    .vignettesAct img {
+        width: 350px !important;
+    }
+
+
+    /* FOOTER */
+
+
+    footer {
+        width: auto ;
+    }
+    #aPropos {
+        margin-right: auto;
+    }
+    #nosHebergements {
+        margin-right: auto;
+    }
     
 
-
-    
-
-
-   
-
-
-
- 
-   
- 
 
 }
+
+    
+
+
+    
+
+
+   
+
+
+
+ 
+   
+ 
+
