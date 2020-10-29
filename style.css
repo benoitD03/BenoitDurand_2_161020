@@ -70,6 +70,9 @@ nav ul li a:focus{
 form {
     margin-bottom: 30px;
 }
+form button {
+    display: none;
+}
 #localisation {
     height: 50px;
     width: 300px;
@@ -292,16 +295,17 @@ form {
     display: flex;
     margin-bottom: 70px;
     flex-wrap: wrap;
+    justify-content: center;
 }
 #gauche {
     display: flex;
-    width: 45%;
-    margin-right: 90px;
+    width: auto;
+    margin-right: 30px;
 }
 #droite {
     display: flex;
-    width: 45%;
-    margin-right: 30px;
+    width: auto;
+    margin-right: 0px;
 }
 .containerAct h3 {
     margin-left: 20px;
@@ -311,7 +315,8 @@ form {
     width: 370px;
     height: 570px;
     margin-left: 30px;
-    margin-right: 80px;
+    margin-right: 50px;
+    margin-bottom: 30px;
     border:  1px solid #F2F2F2;
     border-radius: 21px;
     box-shadow: 6px 6px 6px #F2F2F2;
@@ -339,6 +344,7 @@ form {
 #basGauche {
     width: 370px;
     height: 220px;
+    margin-bottom: 30px;
     border:  1px solid #F2F2F2;
     border-radius: 21px;
     box-shadow: 6px 6px 6px #F2F2F2;
@@ -353,7 +359,7 @@ form {
     width: 370px;
     height: 570px;
     margin-left: 30px;
-    margin-right: 80px;
+    margin-right: 50px;
     border:  1px solid #F2F2F2;
     border-radius: 21px;
     box-shadow: 6px 6px 6px #F2F2F2;
@@ -441,6 +447,7 @@ footer a {
     h1{
         padding-top: 60px;
         font-size: 1.4em;
+        margin-bottom: 12px;
     }
     h2 {
         font-size: 1.3em !important;
@@ -505,6 +512,22 @@ footer a {
     /* SECTION 1 */
 
 
+    form {
+        margin: 30px auto;
+    }
+    form .btn {
+        display: none;
+    }
+    form button {
+        display: inline-block;
+        background-color:  #0065FC;
+        color: white;
+        height: 50px;
+        width: 50px;
+        border: transparent;
+        border-radius: 15px 15px 15px 15px;
+        font-size: 1.2em;
+    }
     #filtres h3 {
         width: 100%;
     }
@@ -557,7 +580,11 @@ footer a {
         background-color: white;
     }
     #hebergements h2 {
-        margin-left: 10px;
+        margin-left: 0 !important;
+    }
+    #hebergements span a {
+        margin: 20px 0 30px 0;
+        font-size: 1.2em;
     }
     .vignettesHeb {
         width: 100%;
@@ -630,7 +657,7 @@ footer a {
         flex-direction: column;
     }
     #aPropos {
-        width: 60%;
+        width: 80%;
     }
     #nosHebergements {
         margin-left: 30px;
@@ -683,7 +710,16 @@ footer a {
         display: flex;
     }
     .vignettesPop {
-        width: auto;
+        width: 75%;
+    }
+    .vignettesPop img {
+        width: 40%;
+    }
+    .vignettesHeb {
+        width: 75%;
+    }
+    .vignettesHeb img {
+        width: 100%;
     }
 
 
@@ -692,16 +728,26 @@ footer a {
     .containerAct{
         width: auto;
         flex-direction: column;
+        
     }
     #gauche {
-        margin-bottom: 30px;
+        width: 100%;
+        margin: auto auto 30px auto;
+        justify-content: center;
+    }
+    #droite {
+        width: auto;
+        justify-content: center;
+        margin: auto;
     }
     #imageSimpleGauche {
         margin-right: 20px;
+        margin-left: 0;
         width: 350px;
     }
     #imageSimpleDroite {
         margin-right: 20px;
+        margin-left: 0;
     }
     .vignettesAct {
         width: 350px !important;
@@ -723,8 +769,36 @@ footer a {
     #nosHebergements {
         margin-right: auto;
     }
-    
 
+}
+
+/* VERSION PETIT ECRAN */ 
+
+
+@media all and (min-width: 1025px) and (max-width: 1600px)
+{
+    /* SECTION 1 */
+
+
+    .mesFiltres {
+        margin-bottom: 20px;
+    }
+
+
+    /* SECTION 2 */ 
+
+    .vignettesPop {
+        width: auto;
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+    #populaires {
+        width: 39%;
+        
+    }
+    #hebergements {
+        width: 51%;
+    }
 
 }
 
