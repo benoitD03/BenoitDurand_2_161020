@@ -61,7 +61,6 @@ nav ul li a:visited {
 nav ul li:hover {
     border-top: 3px #0065FC solid;
    padding-top: 35px;
-   color: #0065FC;
 }
 nav ul li a:focus{
    border-top: 3px #0065FC solid;
@@ -179,12 +178,19 @@ form button {
 /* SECTION 2 */
 
 
-.containerHeb {
+.containerHebPop {
     margin-bottom: 70px;
     display: flex;
     justify-content: space-around;
 }
-.containerHeb a , .containerHeb a:visited {
+.containerHeb {
+    width: 60%;
+    border: 2px solid transparent;
+    border-radius: 15px;
+    padding: 20px;
+    background-color: #F2F2F2;
+}
+.containerHebPop a , .containerHebPop a:visited {
     color: black;
 }
 .etoile {
@@ -193,29 +199,17 @@ form button {
     font-size: medium;
 }
 #hebergements {
-    width: 60%;
-    border: 2px solid transparent;
-    border-radius: 15px;
-    padding: 20px;
-    background-color: #F2F2F2;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
 }
-#hebergements h2 {
+.containerHeb h2 {
     margin-left: 30px;
     font-size: 1.6em;
 }
-#hebergements span a{
+.containerHeb span a{
     margin-left: 25px;
     font-weight: bold;
-}
-#premiereLigne {
-    display: flex;
-    justify-content: space-around;
-    flex-wrap: wrap;
-}
-#secondeLigne {
-    display: flex;
-    justify-content: space-around;
-    flex-wrap: wrap;
 }
 .vignettesHeb {
     width: 300px;
@@ -223,10 +217,6 @@ form button {
     margin-bottom: 20px;
     background-color: white;
     border-radius: 15px;
-    -webkit-transform: scale(1);
-	transform: scale(1);
-	-webkit-transition: .3s ease-in-out;
-	transition: .3s ease-in-out;
 }
 .vignettesHeb img {
     width : 300px;
@@ -243,16 +233,15 @@ form button {
     margin: 7px 0 0 7px;
 }
 .vignettesHeb:hover {
-    -webkit-transform: scale(1.1);
-    transform: scale(1.1);
-    border: 2px solid #0065FC;
+    box-shadow: 5px 5px 5px 5px black;
 }
-#populaires{
+
+.containerPop {
     width: 30%;
     background-color: #F2F2F2;
-    border-radius: 15px;
+    border-radius: 15px; 
 }
-#colonnePop {
+#populaires{
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -265,10 +254,6 @@ form button {
     border-radius: 15px;
     background-color: white;
     margin-bottom: 40px;
-    -webkit-transform: scale(1);
-	transform: scale(1);
-	-webkit-transition: .3s ease-in-out;
-	transition: .3s ease-in-out;
 }
 .vignettesPop img {
     width: 150px;
@@ -280,9 +265,7 @@ form button {
     display: flex;
 }
 .vignettesPop:hover {
-    -webkit-transform: scale(1.1);
-    transform: scale(1.1);
-    border: 2px solid #0065FC;
+    box-shadow: 5px 5px 5px 5px black;
 }
 #titrePop {
     display: flex;
@@ -339,14 +322,12 @@ form button {
     color: black;
 }
 .vignettesAct {
-    -webkit-transform: scale(1);
-	transform: scale(1);
-	-webkit-transition: .3s ease-in-out;
-	transition: .3s ease-in-out;
+    box-shadow: 6px 6px 6px #F2F2F2;
+    border:  1px solid #F2F2F2;
+    border-radius: 21px;
 }
 .vignettesAct:hover {
-    -webkit-transform: scale(1.1);
-    transform: scale(1.1);
+    box-shadow: 5px 5px 5px 5px black;
 }
 #imageSimpleGauche {
     width: 370px;
@@ -354,9 +335,6 @@ form button {
     margin-left: 50px;
     margin-right: 50px;
     margin-bottom: 30px;
-    border:  1px solid #F2F2F2;
-    border-radius: 21px;
-    box-shadow: 6px 6px 6px #F2F2F2;
 }
 #imageSimpleGauche img {
     width: 370px;
@@ -367,9 +345,6 @@ form button {
 #hautGauche {
     width: 370px;
     height: 300px;
-    border:  1px solid #F2F2F2;
-    border-radius: 21px;
-    box-shadow: 6px 6px 6px #F2F2F2;
     margin-bottom: 50px;
 }
 #hautGauche img {
@@ -382,9 +357,6 @@ form button {
     width: 370px;
     height: 220px;
     margin-bottom: 30px;
-    border:  1px solid #F2F2F2;
-    border-radius: 21px;
-    box-shadow: 6px 6px 6px #F2F2F2;
 }
 #basGauche img {
     width: 370px;
@@ -397,9 +369,6 @@ form button {
     height: 570px;
     margin-left: 30px;
     margin-right: 50px;
-    border:  1px solid #F2F2F2;
-    border-radius: 21px;
-    box-shadow: 6px 6px 6px #F2F2F2;
 }
 #imageSimpleDroite img {
     width: 370px;
@@ -410,9 +379,6 @@ form button {
 #hautDroite {
     width: 370px;
     height: 260px;
-    border:  1px solid #F2F2F2;
-    border-radius: 21px;
-    box-shadow: 6px 6px 6px #F2F2F2;
     margin-bottom: 50px;
 }
 #hautDroite img {
@@ -424,9 +390,6 @@ form button {
 #basDroite {
     width: 370px;
     height: 260px;
-    border:  1px solid #F2F2F2;
-    border-radius: 21px;
-    box-shadow: 6px 6px 6px #F2F2F2;
 }
 #basDroite img {
     width: 370px;
@@ -484,12 +447,8 @@ footer a {
     }
     h1{
         padding-top: 25px;
-        font-size: 1.4em;
+        font-size: 1.5em;
         margin-bottom: 12px;
-    }
-    h2 {
-        font-size: 1.3em !important;
-        margin-left: 20px !important;
     }
     h3 {
         font-size: 1em !important;
@@ -503,7 +462,7 @@ footer a {
    #titre_principal img {
        position: absolute;
        top: 15px;
-       left: 1px;
+       left: 0;
        width: auto;
    }
    #topMenu {
@@ -512,11 +471,12 @@ footer a {
    }
    #inscription {
        align-self: flex-end;
+       font-size: 1em;
    }
    nav ul {
        margin: auto;
        padding-left: 0;
-       width: auto;
+       width: 100%;
        
    }
    nav ul li {
@@ -526,6 +486,7 @@ footer a {
        padding-bottom: 10px;
        border-bottom: 3px solid #F2F2F2;
        width: 187px;
+       font-size: 1em;
    }
    nav ul li:nth-child(1){
        padding-left: 15px;
@@ -542,7 +503,9 @@ footer a {
 
     /* SECTION 1 */
 
-
+   .container {
+       margin-left: 20px;
+   }
     form {
         margin: 30px auto;
     }
@@ -585,35 +548,38 @@ footer a {
         padding: 10px;
     }
     #localisation {
-        width: 180px;
+        width: 230px;
     }
     #localisation::placeholder {
         font-size: 0.8em;
     }
-
     /* SECTION 2 */
 
-
-    .containerHeb {
+    .containerHebPop {
         width: auto;
         margin: auto;
         flex-direction: column-reverse;
     }
-    #populaires {
-        width: auto;
-        margin: auto;
-        border-radius: 0;
-        border: 0;   
-    }
-    #hebergements {
+    .containerHeb {
         width: auto;
         margin: auto;
         background-color: white;
     }
-    #hebergements h2 {
-        margin-left: 0 !important;
+    .containerPop {
+        width: auto;
+        margin: auto;
+        border-radius: 0;
+        border: 0;
     }
-    #hebergements span a {
+    .containerPop #titrePop h2 {
+        margin-left: 20px;
+        font-size: 1.3em
+    }
+    .containerHeb h2 {
+        margin-left: 0 ;
+        font-size: 1.3em
+    }
+    .containerHeb span a {
         margin: 20px 0 30px 0;
         font-size: 1.2em;
     }
@@ -707,14 +673,51 @@ footer a {
 
 @media all and (min-width: 481px) and (max-width: 1024px)
 {
-    html { 
+    body { 
         width: auto ;
+    }
+    h1 {
+        margin-top: 35px;
     }
     /* HEADER */
 
 
-    #titre_principal {
-        margin-bottom: 30px;
+    #titre_principal img {
+        position: absolute;
+        top: 15px;
+        left: 1px;
+        width: auto;
+    }
+    #topMenu {
+        flex-direction: column-reverse;
+        width: 100%;
+    }
+    #inscription {
+        align-self: flex-end;
+    }
+    nav ul {
+        margin: auto;
+        padding-left: 0;
+        width: 100%;
+        
+    }
+    nav ul li {
+        display: inline-flex;
+        margin: auto;
+        justify-content: space-around;
+        padding-bottom: 10px;
+        border-bottom: 3px solid #F2F2F2;
+        width: 187px;
+    }
+    nav ul li:nth-child(1){
+        padding-left: 15px;
+    }
+    
+    nav ul li:hover {
+         border-bottom: 3px #0065FC solid;
+         border-top: none;
+         padding-bottom: 10px;
+         color: #0065FC;
     }
     /* SECTION 1 */
     
@@ -739,20 +742,19 @@ footer a {
     }
     /* SECTION 2 */ 
 
-
-    .containerHeb {
+    .containerHebPop {
         width: auto;
         margin: auto;
         flex-direction: column-reverse;
     }
-    #hebergements {
+    .containerHeb {
         width: auto;
     }
-    #populaires {
+    .containerPop {
         width: auto;
         margin-bottom: 30px;
     }
-    #colonnePop {
+    #populaires {
         width: auto;
         display: flex;
     }
@@ -775,17 +777,20 @@ footer a {
     .containerAct{
         width: auto;
         flex-direction: column;
+        margin-bottom: 30px;
         
     }
     #gauche {
         width: 100%;
         margin: auto auto 30px auto;
         justify-content: center;
+        flex-wrap: wrap;
     }
     #droite {
         width: auto;
         justify-content: center;
         margin: auto;
+        flex-wrap: wrap;
     }
     #imageSimpleGauche {
         margin-right: 20px;
@@ -795,6 +800,7 @@ footer a {
     #imageSimpleDroite {
         margin-right: 20px;
         margin-left: 0;
+        margin-bottom: 30px;
     }
     .vignettesAct {
         width: 350px !important;
@@ -839,11 +845,10 @@ footer a {
         margin-left: 20px;
         margin-right: 20px;
     }
-    #populaires {
+    .containerPop {
         width: 39%;
-        
     }
-    #hebergements {
+    .containerHeb {
         width: 51%;
     }
 
