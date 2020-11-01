@@ -9,9 +9,10 @@ h1 {
     margin-bottom: 0;
     font-size: 1.7em;
 }
-.container{
-    margin-left: 30px;
+h3 {
+    font-size: 1.2em;
 }
+
 a {
     text-decoration: none;
 }
@@ -40,6 +41,10 @@ a {
     margin-right: 30px;
     color: #0065FC;
     font-size: 1.2em;
+}
+#inscription :hover {
+    border-radius: 3px;
+    background-color: #DEEBFF;
 }
 .container p {
     margin-top: 5px; 
@@ -74,7 +79,9 @@ nav ul li a:focus{
 
 /* SECTION 1 */
 
-
+.container{
+    margin-left: 30px;
+}
 form {
     margin-bottom: 30px;
 }
@@ -120,7 +127,6 @@ form button {
 }
 #filtres h3 {
     margin-right: 30px;
-    font-size: 1.3em;
 }
 .mesFiltres {
     display: flex;
@@ -225,7 +231,6 @@ form button {
     object-fit: cover;
 }
 .vignettesHeb a h3 {
-    font-size: 1.2em;
     margin: 7px 0 0 7px;
 }
 .vignettesHeb a p {
@@ -310,12 +315,10 @@ form button {
 #gauche {
     display: flex;
     width: auto;
-    margin-right: 30px;
 }
 #droite {
     display: flex;
     width: auto;
-    margin-right: 0px;
 }
 .containerAct h3 {
     margin-left: 20px;
@@ -325,74 +328,59 @@ form button {
     box-shadow: 6px 6px 6px #F2F2F2;
     border:  1px solid #F2F2F2;
     border-radius: 21px;
+    width: 380px;
+    margin: 30px 20px 50px 30px;
+}
+.vignettesAct img {
+    width: 380px;
 }
 .vignettesAct:hover {
     box-shadow: 5px 5px 5px 5px black;
 }
 #imageSimpleGauche {
-    width: 370px;
     height: 570px;
-    margin-left: 50px;
-    margin-right: 50px;
-    margin-bottom: 30px;
 }
 #imageSimpleGauche img {
-    width: 370px;
     height: 500px;
     border-radius: 20px 20px 0 0;
     object-fit: cover;
 }
 #hautGauche {
-    width: 370px;
     height: 300px;
-    margin-bottom: 50px;
 }
 #hautGauche img {
-    width: 370px;
     height: 230px;
     border-radius: 20px 20px 0 0;
     object-fit: cover;
 }
 #basGauche {
-    width: 370px;
     height: 220px;
-    margin-bottom: 30px;
 }
 #basGauche img {
-    width: 370px;
     height: 150px;
     border-radius: 20px 20px 0 0;
     object-fit: cover;
 }
 #imageSimpleDroite {
-    width: 370px;
     height: 570px;
-    margin-left: 30px;
-    margin-right: 50px;
 }
 #imageSimpleDroite img {
-    width: 370px;
     height: 500px;
     border-radius: 20px 20px 0 0;
     object-fit: cover;
 }
 #hautDroite {
-    width: 370px;
     height: 260px;
-    margin-bottom: 50px;
 }
 #hautDroite img {
-    width: 370px;
     height: 190px;
     border-radius: 20px 20px 0 0;
     object-fit: cover;
 }
 #basDroite {
-    width: 370px;
     height: 260px;
 }
 #basDroite img {
-    width: 370px;
     height: 190px;
     border-radius: 20px 20px 0 0;
     object-fit: cover;
@@ -451,10 +439,7 @@ footer a {
         margin-bottom: 12px;
     }
     h3 {
-        font-size: 1em !important;
-    }
-    p {
-        font-size: 0.9em !important;
+        font-size: 1em;
     }
 
     /* HEADER */
@@ -506,8 +491,12 @@ footer a {
    .container {
        margin-left: 20px;
    }
+   .container p {
+       font-size: 0.9em;
+   }
     form {
         margin: 30px auto;
+        width: auto;
     }
     form .btn {
         display: none;
@@ -546,12 +535,16 @@ footer a {
     }
     .mesFiltres p {
         padding: 10px;
+        font-size: 0.9em;
     }
     #localisation {
-        width: 230px;
+        width: 190px;
     }
     #localisation::placeholder {
         font-size: 0.8em;
+    }
+    #info p {
+        font-size: 0.9em;
     }
     /* SECTION 2 */
 
@@ -596,6 +589,9 @@ footer a {
         width: 100%;
         height: 110px;
     }
+    .vignettesHeb a p {
+        font-size: 0.9em;
+    }
     .vignettesPop {
         width: 90%;
         margin-top: 0;
@@ -603,6 +599,9 @@ footer a {
     }
     .vignettesPop img {
         width: 40%;
+    }
+    .vignettesPop p {
+        font-size: 0.9em;
     }
     .vignettesPop .etoile {
         padding-top: 20px;
@@ -632,20 +631,14 @@ footer a {
         margin-left: 0;
     }
     .vignettesAct {
-        width: 90% !important;
+        width: 90%;
         height: 200px !important;
-        margin: auto auto 20px auto !important;
+        margin: auto auto 20px auto;
         
     }
     .vignettesAct img {
-        width: 100% !important;
+        width: 100%;
         height: 70% !important;
-    }
-    #imageSimpleDroite {
-        margin-left: 20px;
-    }
-    #imageSimpleGauche {
-        margin-left: 20px;
     }
 
     /* FOOTER */
@@ -792,21 +785,12 @@ footer a {
         margin: auto;
         flex-wrap: wrap;
     }
-    #imageSimpleGauche {
-        margin-right: 20px;
-        margin-left: 0;
-        width: 350px;
-    }
-    #imageSimpleDroite {
-        margin-right: 20px;
-        margin-left: 0;
-        margin-bottom: 30px;
-    }
     .vignettesAct {
-        width: 350px !important;
+        width: 350px;
+        margin: 0px 10px 50px 10px;
     }
     .vignettesAct img {
-        width: 350px !important;
+        width: 350px;
     }
 
 
@@ -851,7 +835,18 @@ footer a {
     .containerHeb {
         width: 51%;
     }
+}
+@media all and (min-width: 1600px) and (max-width: 1763px)
+{
+    /* SECTION 3 */
 
+    .vignettesAct {
+        width: 310px;
+        margin: 0px 20px 50px 20px;
+    }
+    .vignettesAct img {
+        width: 310px;
+    }
 }
 
     
