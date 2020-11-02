@@ -120,8 +120,7 @@ form button {
     cursor: pointer;
 }
 .gps {
-    padding: 13px 20px;
-    border:  solid #F2F2F2;
+    padding: 16px 20px 15px 20px;
     background-color: #F2F2F2;
     border-radius: 15px 0 0 15px;
 }
